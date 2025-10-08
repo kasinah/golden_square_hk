@@ -8,9 +8,11 @@ class HighValue:
         elif self.value_first < self.value_second:
             return "Second value is higher"
         else:
-            return "Values are equal"
+            return "Both values are equal"
+        
     def add(self, increase_by, selection):
         if selection == "first":
             self.value_first += increase_by
         elif selection == "second":
             self.value_second += increase_by
+            
