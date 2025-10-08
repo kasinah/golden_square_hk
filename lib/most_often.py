@@ -7,9 +7,9 @@ class MostOften:
 
     def get_most_often(self):
         # use set() to create a list of unique items
-        unique_items = set(self.starting_list)
+        unique_items = set(self.starting_list)  
 
-        # set up our highest recorded variables
+        # set up our highest recorded variables to compare against      
         highest_count = 0
         highest_items = []
 
@@ -29,4 +29,7 @@ class MostOften:
             return highest_items[0]
         # otherwise we'll say there's "no clear winner"
         else:
-            return "no clear winner"
+            return "no clear winner"    
+        # return the item with the highest count    
+        # (if there's a tie, return "no clear winner")
+        return highest_items[0] if len(highest_items) == 1 else "no clear winner"
