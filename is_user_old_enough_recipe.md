@@ -1,0 +1,77 @@
+# {{PROBLEM}} is_user_old_enough_recipe
+
+## 1. Describe the Problem
+
+> As an admin
+> So that I can determine whether a user is old enough
+> I want to allow them to enter their date of birth as a string in the format `YYYY-MM-DD`.
+
+> As an admin
+> So that under-age users can be denied entry
+> I want to send a message to any user under the age of 16 saying their access is denied
+> And telling them their current age and the required age (16).
+
+> As an admin
+> So that old enough users can be granted access
+> I want to send a message to any user aged 16 or older to say that access has been granted.
+
+## 2. Design the Function Signature
+
+_Include the name of the function, its parameters, return value, and side effects._
+
+
+```python
+
+def age_checker(dob):
+    """
+        1. check whether user is old enough
+
+        parameter: dob - a string in the format `YYYY-MM-DD` to enter date of birth
+
+        2. return 
+            "Access denied" if the age is < 16 
+            Their current age and the required age (16)
+
+        3. return "Access granted!" if age is >= 16
+    """
+
+```
+
+## 3. Create Examples as Tests
+
+_Make a list of examples of what the function will take and return._
+
+```python
+"""
+        Given the user is less than 16 years old
+        then it return message "Access denied" 
+        AND Their current age and the required age (16)
+"""
+age_cheker("2024-01-01")
+"""
+        Given the user is more than 16 years old
+        then it return message "Access granted" 
+"""
+age_cheker("2000-01-01")
+
+"""
+        Given the user is more than 16 years old
+        then it return message "Access granted" 
+"""
+age_cheker("2009-01-01")
+
+```
+_Encode each example as a test. You can add to the above list as you go._
+
+## 4. Implement the Behaviour
+
+_After each test you write, follow the test-driving process of red, green, refactor to implement the behaviour._
+
+Here's an example for you to start with:
+
+```python
+# EXAMPLE
+
+```
+
+Ensure all test function names are unique, otherwise pytest will ignore them!
